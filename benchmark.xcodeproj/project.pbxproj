@@ -7,17 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDFFA13234CFA480035AD5A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDFFA11234CFA480035AD5A /* Interface.storyboard */; };
+		0BDFFA15234CFA480035AD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDFFA14234CFA480035AD5A /* Assets.xcassets */; };
+		0BDFFA1C234CFA480035AD5A /* MLW Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0BDFFA1B234CFA480035AD5A /* MLW Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BDFFA21234CFA480035AD5A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFFA20234CFA480035AD5A /* InterfaceController.swift */; };
+		0BDFFA23234CFA480035AD5A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFFA22234CFA480035AD5A /* ExtensionDelegate.swift */; };
+		0BDFFA25234CFA490035AD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDFFA24234CFA490035AD5A /* Assets.xcassets */; };
+		0BDFFA29234CFA490035AD5A /* MLW.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0BDFFA0F234CFA480035AD5A /* MLW.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BDFFA32234CFAD40035AD5A /* NamesDT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFFA31234CFAD20035AD5A /* NamesDT.mlmodel */; };
+		0BDFFA33234CFAD60035AD5A /* NamesDT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFFA31234CFAD20035AD5A /* NamesDT.mlmodel */; };
 		F1E1D6362334CB910067DAFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D6352334CB910067DAFC /* AppDelegate.swift */; };
 		F1E1D63A2334CB910067DAFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D6392334CB910067DAFC /* ViewController.swift */; };
 		F1E1D63D2334CB910067DAFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D63B2334CB910067DAFC /* Main.storyboard */; };
 		F1E1D63F2334CB930067DAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D63E2334CB930067DAFC /* Assets.xcassets */; };
 		F1E1D6422334CB930067DAFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D6402334CB930067DAFC /* LaunchScreen.storyboard */; };
-		F1E1D65223355AFE0067DAFC /* DeepLab.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */; };
-		F1E1D65323355AFE0067DAFC /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */; };
-		F1E1D65423355AFE0067DAFC /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D65123355AFE0067DAFC /* cat.jpg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0BDFFA1D234CFA480035AD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E1D62A2334CB910067DAFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDFFA1A234CFA480035AD5A;
+			remoteInfo = "MLW Extension";
+		};
+		0BDFFA27234CFA490035AD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E1D62A2334CB910067DAFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDFFA0E234CFA480035AD5A;
+			remoteInfo = MLW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BDFF9CB234CE9A90035AD5A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0BDFFA29234CFA490035AD5A /* MLW.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFFA2D234CFA490035AD5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0BDFFA1C234CFA480035AD5A /* MLW Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0BDFFA0F234CFA480035AD5A /* MLW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDFFA12234CFA480035AD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0BDFFA14234CFA480035AD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BDFFA16234CFA480035AD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDFFA1B234CFA480035AD5A /* MLW Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MLW Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDFFA20234CFA480035AD5A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0BDFFA22234CFA480035AD5A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0BDFFA24234CFA490035AD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BDFFA26234CFA490035AD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDFFA31234CFAD20035AD5A /* NamesDT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NamesDT.mlmodel; sourceTree = "<group>"; };
 		F1E1D6322334CB910067DAFC /* benchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E1D6352334CB910067DAFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E1D6392334CB910067DAFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,12 +83,16 @@
 		F1E1D63E2334CB930067DAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E1D6412334CB930067DAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E1D6432334CB930067DAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLab.mlmodel; sourceTree = "<group>"; };
-		F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
-		F1E1D65123355AFE0067DAFC /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0BDFFA18234CFA480035AD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1E1D62F2334CB910067DAFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +103,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BDFFA10234CFA480035AD5A /* MLW */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFFA11234CFA480035AD5A /* Interface.storyboard */,
+				0BDFFA14234CFA480035AD5A /* Assets.xcassets */,
+				0BDFFA16234CFA480035AD5A /* Info.plist */,
+			);
+			path = MLW;
+			sourceTree = "<group>";
+		};
+		0BDFFA1F234CFA480035AD5A /* MLW Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFFA31234CFAD20035AD5A /* NamesDT.mlmodel */,
+				0BDFFA20234CFA480035AD5A /* InterfaceController.swift */,
+				0BDFFA22234CFA480035AD5A /* ExtensionDelegate.swift */,
+				0BDFFA24234CFA490035AD5A /* Assets.xcassets */,
+				0BDFFA26234CFA490035AD5A /* Info.plist */,
+			);
+			path = "MLW Extension";
+			sourceTree = "<group>";
+		};
 		F1E1D6292334CB910067DAFC = {
 			isa = PBXGroup;
 			children = (
 				F1E1D6342334CB910067DAFC /* benchmark */,
+				0BDFFA10234CFA480035AD5A /* MLW */,
+				0BDFFA1F234CFA480035AD5A /* MLW Extension */,
 				F1E1D6332334CB910067DAFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				F1E1D6322334CB910067DAFC /* benchmark.app */,
+				0BDFFA0F234CFA480035AD5A /* MLW.app */,
+				0BDFFA1B234CFA480035AD5A /* MLW Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,9 +154,6 @@
 				F1E1D63E2334CB930067DAFC /* Assets.xcassets */,
 				F1E1D6402334CB930067DAFC /* LaunchScreen.storyboard */,
 				F1E1D6432334CB930067DAFC /* Info.plist */,
-				F1E1D65123355AFE0067DAFC /* cat.jpg */,
-				F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */,
-				F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */,
 			);
 			path = benchmark;
 			sourceTree = "<group>";
@@ -76,6 +161,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0BDFFA0E234CFA480035AD5A /* MLW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDFFA2E234CFA490035AD5A /* Build configuration list for PBXNativeTarget "MLW" */;
+			buildPhases = (
+				0BDFFA0D234CFA480035AD5A /* Resources */,
+				0BDFFA2D234CFA490035AD5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDFFA1E234CFA480035AD5A /* PBXTargetDependency */,
+			);
+			name = MLW;
+			productName = MLW;
+			productReference = 0BDFFA0F234CFA480035AD5A /* MLW.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0BDFFA1A234CFA480035AD5A /* MLW Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDFFA2A234CFA490035AD5A /* Build configuration list for PBXNativeTarget "MLW Extension" */;
+			buildPhases = (
+				0BDFFA17234CFA480035AD5A /* Sources */,
+				0BDFFA18234CFA480035AD5A /* Frameworks */,
+				0BDFFA19234CFA480035AD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MLW Extension";
+			productName = "MLW Extension";
+			productReference = 0BDFFA1B234CFA480035AD5A /* MLW Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		F1E1D6312334CB910067DAFC /* benchmark */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1E1D6462334CB930067DAFC /* Build configuration list for PBXNativeTarget "benchmark" */;
@@ -83,10 +202,12 @@
 				F1E1D62E2334CB910067DAFC /* Sources */,
 				F1E1D62F2334CB910067DAFC /* Frameworks */,
 				F1E1D6302334CB910067DAFC /* Resources */,
+				0BDFF9CB234CE9A90035AD5A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0BDFFA28234CFA490035AD5A /* PBXTargetDependency */,
 			);
 			name = benchmark;
 			productName = benchmark;
@@ -99,10 +220,16 @@
 		F1E1D62A2334CB910067DAFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Eliot Andres";
 				TargetAttributes = {
+					0BDFFA0E234CFA480035AD5A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					0BDFFA1A234CFA480035AD5A = {
+						CreatedOnToolsVersion = 11.2;
+					};
 					F1E1D6312334CB910067DAFC = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -122,18 +249,36 @@
 			projectRoot = "";
 			targets = (
 				F1E1D6312334CB910067DAFC /* benchmark */,
+				0BDFFA0E234CFA480035AD5A /* MLW */,
+				0BDFFA1A234CFA480035AD5A /* MLW Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0BDFFA0D234CFA480035AD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFFA15234CFA480035AD5A /* Assets.xcassets in Resources */,
+				0BDFFA13234CFA480035AD5A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFFA19234CFA480035AD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFFA25234CFA490035AD5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1E1D6302334CB910067DAFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1E1D6422334CB930067DAFC /* LaunchScreen.storyboard in Resources */,
 				F1E1D63F2334CB930067DAFC /* Assets.xcassets in Resources */,
-				F1E1D65423355AFE0067DAFC /* cat.jpg in Resources */,
 				F1E1D63D2334CB910067DAFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,20 +286,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0BDFFA17234CFA480035AD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFFA32234CFAD40035AD5A /* NamesDT.mlmodel in Sources */,
+				0BDFFA23234CFA480035AD5A /* ExtensionDelegate.swift in Sources */,
+				0BDFFA21234CFA480035AD5A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1E1D62E2334CB910067DAFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E1D65223355AFE0067DAFC /* DeepLab.mlmodel in Sources */,
 				F1E1D63A2334CB910067DAFC /* ViewController.swift in Sources */,
 				F1E1D6362334CB910067DAFC /* AppDelegate.swift in Sources */,
-				F1E1D65323355AFE0067DAFC /* UIImage+CVPixelBuffer.swift in Sources */,
+				0BDFFA33234CFAD60035AD5A /* NamesDT.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0BDFFA1E234CFA480035AD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDFFA1A234CFA480035AD5A /* MLW Extension */;
+			targetProxy = 0BDFFA1D234CFA480035AD5A /* PBXContainerItemProxy */;
+		};
+		0BDFFA28234CFA490035AD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDFFA0E234CFA480035AD5A /* MLW */;
+			targetProxy = 0BDFFA27234CFA490035AD5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0BDFFA11234CFA480035AD5A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BDFFA12234CFA480035AD5A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		F1E1D63B2334CB910067DAFC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -174,6 +349,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0BDFFA2B234CFA490035AD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
+				INFOPLIST_FILE = "MLW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		0BDFFA2C234CFA490035AD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
+				INFOPLIST_FILE = "MLW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		0BDFFA2F234CFA490035AD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
+				IBSC_MODULE = MLW_Extension;
+				INFOPLIST_FILE = MLW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		0BDFFA30234CFA490035AD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
+				IBSC_MODULE = MLW_Extension;
+				INFOPLIST_FILE = MLW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 		F1E1D6442334CB930067DAFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,13 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
 				INFOPLIST_FILE = benchmark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.artizans.benchmark;
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,13 +569,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K2Y67AWC2;
 				INFOPLIST_FILE = benchmark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.artizans.benchmark;
+				PRODUCT_BUNDLE_IDENTIFIER = claudi.filippo.benchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,6 +586,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BDFFA2A234CFA490035AD5A /* Build configuration list for PBXNativeTarget "MLW Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFFA2B234CFA490035AD5A /* Debug */,
+				0BDFFA2C234CFA490035AD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDFFA2E234CFA490035AD5A /* Build configuration list for PBXNativeTarget "MLW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFFA2F234CFA490035AD5A /* Debug */,
+				0BDFFA30234CFA490035AD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F1E1D62D2334CB910067DAFC /* Build configuration list for PBXProject "benchmark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
